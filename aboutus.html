@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="images/video.mp4.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Background Music -->
+<audio id="background-music" src="images/bgmusic.mp3" loop></audio>
+
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="location.href='index.html'">BACK</button>
+
+    <!-- People Images and View Buttons -->
+    <div class="people-container">
+        <div class="person">
+            <img src="images/person1.jpg" alt="Person 1">
+            <p class="person-name">Yong Kelvin</p> <!-- Name Below Image -->
+            <button class="view-button" onclick="openImage(1)">VIEW</button>
+        </div>
+        <div class="person">
+            <img src="images/person2.jpg" alt="Person 2">
+            <p class="person-name">Kousalya</p> <!-- Name Below Image -->
+            <button class="view-button" onclick="openImage(2)">VIEW</button>
+        </div>
+        <div class="person">
+            <img src="images/person3.jpg" alt="Person 3">
+            <p class="person-name">Sree</p> <!-- Name Below Image -->
+            <button class="view-button" onclick="openImage(3)">VIEW</button>
+        </div>
+        <div class="person">
+            <img src="images/person4.jpg" alt="Person 4">
+            <p class="person-name">Puarasan</p> <!-- Name Below Image -->
+            <button class="view-button" onclick="openImage(4)">VIEW</button>
+        </div>
+        <div class="person">
+            <img src="images/person5.jpg" alt="Person 5">
+            <p class="person-name">Koh Ju Ping</p> <!-- Name Below Image -->
+            <button class="view-button" onclick="openImage(5)">VIEW</button>
+        </div>
+        <div class="person">
+            <img src="images/person6.jpg" alt="Person 6">
+            <p class="person-name">Kiruthiga</p> <!-- Name Below Image -->
+            <button class="view-button" onclick="openImage(6)">VIEW</button>
+        </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="images/instagram-logo_1199-122.jpg.webp" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/images.png" alt="Facebook">
+        </a>
+        <a href="https://www.google.com/?client=safari" target="_blank">
+            <img src="images/Gmail_icon_(2020).svg.png" alt="Gmail">
+        </a>
+    </div>
+
+    <!-- Image Popup -->
+    <div id="popup" class="popup" onclick="closeImage()">
+        <img id="popup-image" class="popup-image" src="" alt="Person Bio">
+    </div>
+</body>
+</html>
